@@ -1,6 +1,6 @@
 {
-  "name": "@backand/bkndangular2-sdk",
-  "version": "1.0.30",
+  "name": "@backand/angular2-sdk",
+  "version": "1.0.4",
   "description": "Backand SDK for Angular 2",
   "main": "./src/backand.service.js",
   "types": "./src/backand.service.d.ts",
@@ -19,26 +19,29 @@
   "license": "MIT",
   "dependencies": {
     "@angular/core": "^2.4.3",
-    "@backand/bkndvanilla-sdk": "^1.0.30"
+    "@backand/bkndvanilla-sdk": "^1.0.30",
+    "@backand/vanilla-sdk": "^1.0.4",
+    "rxjs": "^5.0.3",
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
     "typescript": "^2.1.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/backand/bkndangular2-sdk.git"
+    "url": "git+https://github.com/backand/angular2-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/backand/bkndangular2-sdk/issues"
+    "url": "https://github.com/backand/angular2-sdk/issues"
   },
-  "homepage": "https://github.com/backand/bkndangular2-sdk#readme",
+  "homepage": "https://github.com/backand/angular2-sdk#readme",
   "keywords": [
     "Backand",
     "backend",
     "backend sdk",
     "backend js",
     "backend javascript",
-    "bkndangular2-sdk",
+    "angular2-sdk",
     "backend angular sdk"
   ]
 }

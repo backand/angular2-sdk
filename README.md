@@ -1,7 +1,7 @@
-bkndangular2-sdk
+angular2-sdk
 ===
-[![npm version](https://img.shields.io/npm/v/@backand/bkndangular2-sdk.svg?style=flat-square)](https://www.npmjs.org/package/@backand/bkndangular2-sdk)
-[![npm downloads](https://img.shields.io/npm/dt/@backand/bkndangular2-sdk.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@backand/bkndangular2-sdk)
+[![npm version](https://img.shields.io/npm/v/@backand/angular2-sdk.svg?style=flat-square)](https://www.npmjs.org/package/@backand/angular2-sdk)
+[![npm downloads](https://img.shields.io/npm/dt/@backand/angular2-sdk.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@backand/angular2-sdk)
 
 >  Backand SDK for [Angularjs2](https://angular.io/).
 This SDK enables you to communicate comfortably and quickly with your Backand app.
@@ -11,14 +11,17 @@ It wraps the [bkndvanilla-sdk](https://github.com/backand/bkndvanilla-sdk) to al
 ## Installation
 - npm:
 ```bash
-$ npm i -S @backand/bkndangular2-sdk
+$ npm i -S @backand/angular2-sdk
 ```
 - yarn:
 ```bash
-$ yarn add @backand/bkndangular2-sdk
+$ yarn add @backand/angular2-sdk
 ```
+
+
+## Import
 ```javascript
-import { BackandService } from '@backand/bkndangular2-sdk'
+import { BackandService } from '@backand/angular2-sdk'
 ```
 
 
@@ -44,7 +47,7 @@ export class AppComponent implements OnInit {
   constructor(private backand: BackandService) { }
   getList(): void {
     this.backand.object.getList('items').then((res: any) => {
-      this.res = 'Hello bkndangular2-sdk';
+      this.res = 'Hello angular2-sdk';
       console.log(res);
     })
   }
@@ -60,7 +63,7 @@ export class AppComponent implements OnInit {
 
 
 ## Examples
-***To view the demo web page, just run npm start - [example page](https://github.com/backand/bkndangular2-sdk/blob/master/example/).***
+***To view the demo web page, just run npm start - [example page](https://github.com/backand/angular2-sdk/blob/master/example/).***
 
 
 ## License
