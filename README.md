@@ -5,7 +5,7 @@ angular2-sdk
 
 >  Backand SDK for [Angularjs2](https://angular.io/).
 This SDK enables you to communicate comfortably and quickly with your Backand app.
-It wraps the [bkndvanilla-sdk](https://github.com/backand/bkndvanilla-sdk) to allow easier work on projects involving Angularjs2.
+It wraps the [vanilla-sdk](https://github.com/backand/vanilla-sdk) to allow easier work on projects involving Angularjs2.
 
 
 ## Installation
