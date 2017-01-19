@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import * as backand from '@backand/bkndvanilla-sdk'
+import * as backand from '@backand/vanilla-sdk'
 
 @Injectable()
 export class BackandService {

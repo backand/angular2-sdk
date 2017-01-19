@@ -1,6 +1,6 @@
 {
   "name": "@backand/angular2-sdk",
-  "version": "1.0.41",
+  "version": "1.0.5",
   "description": "Backand SDK for Angular 2",
   "main": "./src/backand.service.js",
   "types": "./src/backand.service.d.ts",
@@ -19,8 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@angular/core": "^2.4.3",
-    "@backand/bkndvanilla-sdk": "^1.0.30",
-    "@backand/vanilla-sdk": "^1.0.4",
+    "@backand/vanilla-sdk": "^1.0.5",
     "rxjs": "^5.0.3",
     "zone.js": "^0.7.6"
   },
