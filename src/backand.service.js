@@ -21,27 +21,27 @@ var BackandService = (function () {
         });
     };
     // auth
-    BackandService.prototype.useAnonymousAuth = function (scb) { };
+    BackandService.prototype.useAnonymousAuth = function () { };
     ;
-    BackandService.prototype.signin = function (username, password, scb, ecb) { };
+    BackandService.prototype.signin = function (username, password) { };
     ;
-    BackandService.prototype.signup = function (email, password, confirmPassword, firstName, lastName, parameters, scb, ecb) { };
+    BackandService.prototype.signup = function (firstName, lastName, email, password, confirmPassword, parameters) { };
     ;
-    BackandService.prototype.socialSignin = function (provider, scb, ecb) { };
+    BackandService.prototype.socialSignin = function (provider) { };
     ;
-    BackandService.prototype.socialSigninWithToken = function (provider, token, scb, ecb) { };
+    BackandService.prototype.socialSigninWithToken = function (provider, token) { };
     ;
-    BackandService.prototype.socialSignup = function (provider, email, scb, ecb) { };
+    BackandService.prototype.socialSignup = function (provider, email) { };
     ;
-    BackandService.prototype.requestResetPassword = function (username, scb, ecb) { };
+    BackandService.prototype.requestResetPassword = function (username) { };
     ;
-    BackandService.prototype.resetPassword = function (newPassword, resetToken, scb, ecb) { };
+    BackandService.prototype.resetPassword = function (newPassword, resetToken) { };
     ;
-    BackandService.prototype.changePassword = function (oldPassword, newPassword, scb, ecb) { };
+    BackandService.prototype.changePassword = function (oldPassword, newPassword) { };
     ;
-    BackandService.prototype.signout = function (scb) { };
+    BackandService.prototype.signout = function () { };
     ;
-    BackandService.prototype.getSocialProviders = function (scb) { };
+    BackandService.prototype.getSocialProviders = function () { };
     ;
     // socket
     BackandService.prototype.on = function (eventName, callback) { };

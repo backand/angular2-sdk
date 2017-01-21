@@ -7,17 +7,17 @@ export declare class BackandService {
     file: any;
     query: any;
     user: any;
-    useAnonymousAuth(scb?: (response?: Response) => void): any;
-    signin(username: string, password: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    signup(email: string, password: string, confirmPassword: string, firstName: string, lastName: string, parameters?: any, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    socialSignin(provider: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    socialSigninWithToken(provider: string, token: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    socialSignup(provider: string, email: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    requestResetPassword(username: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    resetPassword(newPassword: string, resetToken: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    changePassword(oldPassword: string, newPassword: string, scb?: (response?: Response) => void, ecb?: (error?: Response) => void): any;
-    signout(scb?: (response?: Response) => void): any;
-    getSocialProviders(scb?: (response?: Response) => void): any;
+    useAnonymousAuth(): any;
+    signin(username: string, password: string): any;
+    signup(firstName: string, lastName: string, email: string, password: string, confirmPassword: string, parameters?: any): any;
+    socialSignin(provider: string): any;
+    socialSigninWithToken(provider: string, token: string): any;
+    socialSignup(provider: string, email: string): any;
+    requestResetPassword(username: string): any;
+    resetPassword(newPassword: string, resetToken: string): any;
+    changePassword(oldPassword: string, newPassword: string): any;
+    signout(): any;
+    getSocialProviders(): any;
     on(eventName: string, callback?: (response?: any) => void): void;
 }
 export declare class Response {

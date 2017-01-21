@@ -40,14 +40,16 @@ export class AppModule { }
 ```javascript
 @Component({
   selector: 'my-app',
-  template: `<h1>{{res}}</h1>`
+  template: `<h1>Hello angular2-sdk</h1>
+    <h3>{{res}}</h3>`
 })
 export class AppComponent implements OnInit {
   res: string;
   constructor(private backand: BackandService) { }
   getList(): void {
-    this.backand.object.getList('items').then((res: any) => {
-      this.res = 'Hello angular2-sdk';
+    this.res = 'fetching objects...';
+    this.backand.object.getList('users').then((res: any) => {
+      this.res = `${res.data.length} objects fetched`;
       console.log(res);
     })
   }
