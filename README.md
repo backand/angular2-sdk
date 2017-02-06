@@ -70,6 +70,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
+Review the full API reference at our [vanilla-sdk's github](https://github.com/backand/vanilla-sdk) to get started with your back end!
 
 ## Examples
 ***To view a demo of the SDK in action, just run `npm start` - [example page](https://github.com/backand/angular2-sdk/blob/master/example/).***
