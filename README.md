@@ -8,6 +8,10 @@ angular2-sdk
 It wraps the [vanilla-sdk](https://github.com/backand/vanilla-sdk) to allow you to work with Back& more easily when working on projects based on Angular.js 2.
 
 
+## Overview
+This SDK is an Angular 2 wrapper around our [vanilla-sdk](https://github.com/backand/vanilla-sdk). This provides convenient objects and properties for Angular 2 apps working with Back&. You can refer to the [vanilla-sdk](https://github.com/backand/vanilla-sdk)'s readme for a full API reference. Follow the instructions below to install our Angular 2 SDK!
+
+
 ## Installation
 To install the Angular 2 SDK, use the correct command for your dependency management platform:
 
