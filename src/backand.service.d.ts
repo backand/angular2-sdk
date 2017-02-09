@@ -1,5 +1,5 @@
 export declare class BackandService {
-    init(config: Object): void;
+    init(config: any): void;
     constants: any;
     helpers: any;
     defaults: any;
@@ -7,6 +7,7 @@ export declare class BackandService {
     file: any;
     query: any;
     user: any;
+    socket: any;
     useAnonymousAuth(): any;
     signin(username: string, password: string): any;
     signup(firstName: string, lastName: string, email: string, password: string, confirmPassword: string, parameters?: any): any;

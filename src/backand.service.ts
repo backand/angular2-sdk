@@ -1,13 +1,21 @@
 import { Injectable } from '@angular/core'
+import { Observable } from 'rxjs'
 import * as backand from '@backand/vanilla-sdk'
 
 @Injectable()
 export class BackandService {
-  init(config: Object): void {
+  init(config: any): void {
     backand.init(config);
-    Object.keys(backand).forEach(key => {
-      this[key] = backand[key];
-    })
+    if (config.observable) {
+      Object.keys(backand).forEach(key => {
+        this[key] = Observable.fromPromise(backand[key]);
+      });
+    }
+    else {
+      Object.keys(backand).forEach(key => {
+        this[key] = backand[key];
+      });
+    }
   }
   constants: any;
   helpers: any;
@@ -16,6 +24,7 @@ export class BackandService {
   file: any;
   query: any;
   user: any;
+  socket: any;
   // auth
   useAnonymousAuth (): any {};
   signin (username: string, password: string): any {};
