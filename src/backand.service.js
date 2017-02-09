@@ -5,58 +5,46 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require("@angular/core");
-var backand = require("@backand/vanilla-sdk");
-var BackandService = (function () {
-    function BackandService() {
-    }
-    BackandService.prototype.init = function (config) {
-        var _this = this;
+const core_1 = require("@angular/core");
+const backand = require("@backand/vanilla-sdk");
+let BackandService = class BackandService {
+    init(config) {
         backand.init(config);
-        Object.keys(backand).forEach(function (key) {
-            _this[key] = backand[key];
+        Object.keys(backand).forEach(key => {
+            this[key] = backand[key];
         });
-    };
+    }
     // auth
-    BackandService.prototype.useAnonymousAuth = function () { };
+    useAnonymousAuth() { }
     ;
-    BackandService.prototype.signin = function (username, password) { };
+    signin(username, password) { }
     ;
-    BackandService.prototype.signup = function (firstName, lastName, email, password, confirmPassword, parameters) { };
+    signup(firstName, lastName, email, password, confirmPassword, parameters) { }
     ;
-    BackandService.prototype.socialSignin = function (provider) { };
+    socialSignin(provider) { }
     ;
-    BackandService.prototype.socialSigninWithToken = function (provider, token) { };
+    socialSigninWithToken(provider, token) { }
     ;
-    BackandService.prototype.socialSignup = function (provider, email) { };
+    socialSignup(provider, email) { }
     ;
-    BackandService.prototype.requestResetPassword = function (username) { };
+    requestResetPassword(username) { }
     ;
-    BackandService.prototype.resetPassword = function (newPassword, resetToken) { };
+    resetPassword(newPassword, resetToken) { }
     ;
-    BackandService.prototype.changePassword = function (oldPassword, newPassword) { };
+    changePassword(oldPassword, newPassword) { }
     ;
-    BackandService.prototype.signout = function () { };
+    signout() { }
     ;
-    BackandService.prototype.getSocialProviders = function () { };
+    getSocialProviders() { }
     ;
     // socket
-    BackandService.prototype.on = function (eventName, callback) { };
+    on(eventName, callback) { }
     ;
-    return BackandService;
-}());
+};
 BackandService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], BackandService);
 exports.BackandService = BackandService;
-var Response = (function () {
-    function Response() {
-    }
-    return Response;
-}());
+class Response {
+}
 exports.Response = Response;
-//# sourceMappingURL=backand.service.js.map

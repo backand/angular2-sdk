@@ -1,2 +1,12 @@
 # Dependency directory
 node_modules/**
+bower_components/**
+
+# web storm ide
+.idea/**
+
+
+
+
+# temp
+test/**
