@@ -1,8 +1,5 @@
 angular2-sdk
 ===
-[![npm version](https://img.shields.io/npm/v/@backand/angular2-sdk.svg?style=flat-square)](https://www.npmjs.org/package/@backand/angular2-sdk)
-[![npm downloads](https://img.shields.io/npm/dt/@backand/angular2-sdk.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@backand/angular2-sdk)
-
 >  Backand SDK for [Angular.js 2](https://angular.io/).
  This is the documentation for Back&'s Angular 2 SDK. This SDK enables you to communicate comfortably and quickly with your Backand app.
 It wraps the [vanilla-sdk](https://github.com/backand/vanilla-sdk) to allow you to work with Back& more easily when working on projects based on Angular.js 2.
