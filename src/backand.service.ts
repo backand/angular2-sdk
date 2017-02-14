@@ -24,7 +24,6 @@ export class BackandService {
   file: any;
   query: any;
   user: any;
-  socket: any;
   // auth
   useAnonymousAuth (): any {};
   signin (username: string, password: string): any {};
