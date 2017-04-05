@@ -17,7 +17,7 @@
     "build": "tsc -p src/",
     "test": "npm run build && tsc -p test/ && mocha",
     "patch": "npm version patch -m \"Release version %s\"",
-    "version": "npm update -S @backand/vanilla-sdk && npm run build && git add -A",
+    "version": "npm i -S -f @backand/vanilla-sdk && npm run build && git add -A",
     "postversion": "git push && git push --tags"
   },
   "author": "Backand",
