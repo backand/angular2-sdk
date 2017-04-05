@@ -1,6 +1,6 @@
 {
   "name": "@backand/angular2-sdk",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Backand SDK for Angular 2",
   "main": "./src/backand.service.js",
   "types": "./src/backand.service.d.ts",
