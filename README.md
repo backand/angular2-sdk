@@ -76,6 +76,8 @@ Review the full API reference at our [vanilla-sdk's github](https://github.com/b
 ## Examples
 ***To view a demo of the SDK in action, just run `npm start` - [example page](https://github.com/backand/angular2-sdk/blob/master/example/).***
 
+***We also offer an example app for Angular 2 - just follow the instructions in our [sample project](https://github.com/backand/angular2-example)***
+
 
 ## License
 
