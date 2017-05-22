@@ -7,6 +7,10 @@ export declare class BackandService {
     file: any;
     query: any;
     user: any;
+    offline: any;
+    bulk: any;
+    fn: any;
+    invoke: any;
     useAnonymousAuth(): any;
     signin(username: string, password: string): any;
     signup(firstName: string, lastName: string, email: string, password: string, confirmPassword: string, parameters?: any): any;
