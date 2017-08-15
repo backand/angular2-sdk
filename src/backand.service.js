@@ -52,11 +52,11 @@ var BackandService = (function () {
     // socket
     BackandService.prototype.on = function (eventName, callback) { };
     ;
+    BackandService = __decorate([
+        core_1.Injectable()
+    ], BackandService);
     return BackandService;
 }());
-BackandService = __decorate([
-    core_1.Injectable()
-], BackandService);
 exports.BackandService = BackandService;
 var Response = (function () {
     function Response() {
