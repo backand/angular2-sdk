@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var rxjs_1 = require("rxjs");
 var backand = require("@backand/vanilla-sdk");
-var BackandService = (function () {
+var BackandService = /** @class */ (function () {
     function BackandService() {
     }
     BackandService.prototype.init = function (config) {
@@ -58,7 +58,7 @@ var BackandService = (function () {
     return BackandService;
 }());
 exports.BackandService = BackandService;
-var Response = (function () {
+var Response = /** @class */ (function () {
     function Response() {
     }
     return Response;
